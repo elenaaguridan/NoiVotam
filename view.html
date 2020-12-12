@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>View Records</title>
+</head>
+<body>
+	
+<?php
+include ('connect.php');
+$result="SELECT  name,  picture FROM products";
+
+if($result -> num_rows >0) {
+while($row=$result -> fetch_assoc()){
+echo "<tr><td>".$row["id"]."</td><td>".$row["picture"]."</td></tr>";
+}
+echo "string";
+}
+
+
+?>
+	</table>
+	
+	</body>
+</html>

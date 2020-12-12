@@ -1,0 +1,99 @@
+<html>   
+<head>
+<title>Noi Votam!Toti Votam! </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<div class="top-nav-bar">
+<div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+ <a href="index.html"><img src="logo.png" class="logo"></a>
+<input type="text" class="form-control">
+<span class="input-group-text"><i class="fa fa-search"></i>
+</span>
+    </div>
+<div class="menu-bar">
+   <ul>
+	<li><a href="shop.html"><i class="fa fa-shopping-cart"></i>Coș</a></li>
+    <li><a href="cont.html">Contul meu</a></li>
+    </ul>
+</div>
+</div>
+
+</head>
+<body>
+
+<h2><b style="color: darkblue">Introdu datele de livrare:</b></h2>
+<div class="rowc">
+  <div class="col-75">
+    <div class="containerc">
+      <form action="/action_page.php">
+      
+        <div class="rowc">
+          <div class="col-50">
+            <h3>Adresa de livrare</h3>
+            <label for="fname"><i class="fa fa-user"></i> Nume și prenume</label>
+            <input type="text" id="fname" name="firstname" placeholder="Popescu Irina">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="ipopescu@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Adresa</label>
+            <input type="text" id="adr" name="address" placeholder="Bd. Camil Ressu Nr. 70, Bl. 2, Sc. 2, Ap. 45">
+            <label for="city"><i class="fa fa-institution"></i> Oraș</label>
+            <input type="text" id="city" name="city" placeholder="București">
+
+            <div class="rowc">
+              <div class="col-50">
+                <label for="state">Țara</label>
+                <input type="text" id="state" name="state" placeholder="România">
+              </div>
+              <div class="col-50">
+                <label for="zip">Codul poștal</label>
+                <input type="text" id="zip" name="zip" placeholder="631245">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Metode de plată</h3>
+            <label for="fname">Card de credit sau debit</label>
+            <div class="icon-containerc">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Numele afișat pe card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Irina Popescu">
+            <label for="ccnum">Numărul cardului</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Luna expirării cardului</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="03">
+            <div class="rowc">
+              <div class="col-50">
+                <label for="expyear">Anul expirării cardului</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2022">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Folosește datele și pentru facturare
+        </label>
+        <input type="submit" value="Confirmă" class="btn-c">
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

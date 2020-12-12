@@ -1,0 +1,296 @@
+
+<html>   
+<head>
+<title>Noi Votam!Toti Votam! </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<div class="top-nav-bar">
+<div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+ <a href="index.html"><img src="logo.png" class="logo"></a>
+<input type="text" class="form-control">
+<span class="input-group-text"><i class="fa fa-search"></i>
+</span>
+    </div>
+<div class="menu-bar">
+    <ul>
+	<li><a href="shop.html"><i class="fa fa-shopping-cart"></i>Coș</a></li>
+    <li><a href="cont.html">Contul meu</a></li>
+    </ul>
+</div>
+</div>
+<div class="side-menu" id="side-menu">
+<ul>
+    <a href="index.html"><li>Home</li></a>
+    
+<li>Magazin<i class="fa fa-angle-right"></i>
+   <ul>
+       <a href="femei.html"><li>Femei</li></a>
+       <a href="barbati.html"><li>Bărbați</li></a>
+    </ul>
+</li>
+    <a href="mission.html"><li>Despre proiect</li></a>
+	<a href="vot.html"><li>Despre vot</li></a>
+       <a href="europarlamentare.html"><li>Alegerile europarlamentare</li></a>
+       <a href="romania.html"><li>Alegerile în România</li></a>
+
+    <a href="contact.html"><li>Contact</li></a>
+</ul>
+</div>
+    
+<!----------featured-categories------------->
+	<h2 class="tricouri">Tu pentru ce votezi?</h2>
+	<section class="featured-categories">
+	<div class="container">
+	<div class="row">
+		<div  class="articles">
+        <img src="dem_red.PNG">
+        <div class="prod">
+		<h3 class="tit" id="brand1">Democrația</h3>
+		<h4 id="price1">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity1" name="quantity1" min="1" max="10" value="1">
+		<select id="size1" name="size1">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+		</div>
+	<div>
+		<button class="addTO" onclick="add(1)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        
+    </div>
+		</div>
+	<p id="message1"></p>
+		<div class="articles">
+        <img src="calamitati_yellow.PNG">
+        <div class="prod">
+		<h3 class="tit" id="brand2">Calamități</h3>
+		<h4 id="price2">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity2" name="quantity2" min="1" max="10" value="1">
+		<select id="size2" name="size2">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+			</div>
+	<div>
+		<button class="addTO" onclick="add(2)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        </div>
+    </div>
+		<p id="message2"></p>
+	<div class="articles">
+    <img src="plangere_blue.PNG">
+      <div class="prod">
+		<h3 class="tit" id="brand3">Plângere</h3>
+		<h4 id="price3">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity3" name="quantity3" min="1" max="10" value="1">
+		<select id="size3" name="size3">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+		</div>
+	<div>
+		<button class="addTO" onclick="add(3)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        
+        </div>
+    </div>
+		
+	<p id="message3"></p>
+	<div class="articles">
+    <img src="genunche_black_m.PNG">
+       <div class="prod">
+		<h3 class="tit" id="brand4">Educația</h3>
+		<h4 id="price4">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity4" name="quantity4" min="1" max="10" value="1">
+		<select id="size4" name="size4">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+		</div>
+	<div>
+		<button class="addTO" onclick="add(4)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        
+        </div>
+    </div>
+		<p id="message4"></p>
+		<div class="articles">
+		<img src="erorile_white_m.PNG">
+        <div class="prod">
+		<h3 class="tit" id="brand5">Erorile</h3>
+		<h4 id="price5">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity5" name="quantity5" min="1" max="10" value="1">
+		<select id="size5" name="size5">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+			</div>
+	<div>
+		<button class="addTO" onclick="add(5)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        
+        </div>
+    </div>
+		<p id="message5"></p>
+			<div class="articles">
+    <img src="cormorani_blue_m.PNG">
+        <div class="prod">
+		<h3 class="tit" id="brand6">Cormorani</h3>
+		<h4 id="price6">60</h4>
+		<h4>RON</h4>
+		</div>
+	<div class="inputs">
+		<input type="number" id="quantity6" name="quantity6" min="1" max="10" value="1">
+		<select id="size6" name="size6">
+		<option value="S">S</option>
+		<option value="M">M</option>
+		<option value="L">L</option>
+		</select>
+				</div>
+	<div>
+		<button class="addTO" onclick="add(6)"> Adaugă în coș <i class="fa fa-shopping-cart"></i></button>
+        
+        </div>
+    </div>
+	</section>
+<p id="message6"></p>
+    </div>
+        
+    </div>
+	
+	
+  
+
+
+<div class="cart">
+<h1 class="tit">Articolele mele</h1>
+<ul id="items">
+</ul>
+<h3 id="total" style="text-align: left;">Total: 0 RON</h3>
+<a href="checkout.html"><input type="submit" value="Confirmă" class="btn-c"></a>
+</div>
+	</div>
+<script>
+	var total=0;
+	var i=1;
+	var message= "Selectează o mărime";
+	var itemCost=[];
+	
+	function add(n){
+		sizeID = "size" + n;
+		messageID = "message" + n;
+		size = document.getElementById(sizeID).value;
+		if(size=="size") {
+			document.getElementById(messageID).innerHTML=message;
+			return 0;
+		}
+		
+		brand = "brand" + n;
+		priceID = "price" +n;
+		quantityId = "quantity" +n;
+		name=document.getElementById(brand).innerHTML;
+		price=document.getElementById(priceID).innerHTML;
+		quantity=document.getElementById(quantityId).value;
+		
+		var node= document.createElement("LI");
+		item = "item" +i;
+		node.setAttribute("id",item)
+		itemCost[i-1]= Number(price) * Number(quantity);
+		i+=1;
+		var textnode = document.createTextNode(name+" "+quantity+" x "+price+" RON, mărimea: "+size);
+		node.appendChild(textnode);
+		document.getElementById("items").appendChild(node);
+		total+=Number(price)*Number(quantity);
+		document.getElementById("total").innerHTML="Total: " + total.toFixed(2) + " RON";
+		document.getElementById(item).innerHTML+='<button class="remove" onclick="deleteItem('+"'"+item+"'"+')">x</button>';
+		
+	}
+	
+	function deleteItem(eId) {
+		document.getElementById(eId).remove();
+		n=Number(eId.slice(-1))-1;
+		total -= itemCost[n];
+		document.getElementById("total").innerHTML="Total: " + total.toFixed(2) + " RON";
+	}
+	
+</script>
+
+<!---------------------Footer------------------->
+    <section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+        <div class="col-md-3">
+        <h1>Link-uri utile</h1>
+            <a href="politica.pdf"><p>Politica de confidențialitate</p></a>
+            <a href="termeni.pdf"><p>Termeni și condiții</p></a>
+            <a href="retur.pdf"><p>Politica de returnare</p></a>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Contact</h1>
+        <p>Str. Baba Novac, Nr. 10, București, Sector 3</p>
+        <p>0749090545</p>
+        <p>homeawayconcept@gmail.com</p>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Urmărește-ne</h1>
+            <a href="https://www.facebook.com/TotiVotam/"><p><i class="fa fa-facebook-official"></i> Facebook</p></a>
+            <a href="https://www.instagram.com/?hl=ro"><p><i class="fa fa-instagram"></i> Instagram</p></a>
+            </div>
+        <div class="col-md-3 footer-image">
+            <img src="logo.png">
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Conținutul acestui site este protejat de drepturile de autor</p>
+        </div>
+        
+        </section>
+    
+             
+             
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+	
+    
+
+    
+    
+    </body>
+</html>

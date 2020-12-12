@@ -1,0 +1,128 @@
+<html>   
+<head>
+<title>Noi Votam!Toti Votam! </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+</head>
+<body>
+<div class="top-nav-bar">
+<div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+<img src="C:\Users\John\Desktop\licenta\photos\logo.png" class="logo">
+<input type="text" class="form-control">
+<span class="input-group-text"><i class="fa fa-search"></i>
+</span>
+    </div>
+<div class="menu-bar">
+    <ul>
+    <li><a hreaf="#"><i class="fa fa-shopping-cart"></i>Coș</a></li>
+    <li><a hreaf="#">Contul meu</a></li>
+    </ul>
+</div>
+</div>
+    
+<section class="hearder">
+<div class="side-menu" id="side-menu">
+<ul>
+    <a href="index.html"><li>Home</li></a>
+    
+<li>Magazin<i class="fa fa-angle-right"></i>
+   <ul>
+       <a href="femei.html"><li>Femei</li></a>
+       <a href="barbati.html"><li>Bărbați</li></a>
+    </ul>
+</li>
+    <a href="mission.html"><li>Despre proiect</li></a>
+    <li>Despre vot</li>
+<li>Contact</li>
+</ul>
+</div>
+
+ <section class="website-features">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\100%.jpg">
+    <div class="feature-text">
+    <p><b>100% Produse originale </b>cu rol educativ</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\livrare.png">
+    <div class="feature-text">
+    <p><b>Livrare gratuită </b>pentru comenzi de minimum 120 RON</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\plataonline.png">
+    <div class="feature-text">
+    <p><b>Plată online </b>prin card sau transfer bancar</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\retur1.png">
+    <div class="feature-text">
+    <p><b>Retur gratuit </b>în 14 zile</p>
+    </div>
+    </div>
+    </section>
+        
+    <!---------------------Footer------------------->
+    <section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+        <div class="col-md-3">
+        <h1>Link-uri utile</h1>
+            <a href="politica.pdf"><p>Politica de confidențialitate</p></a>
+            <a href="termeni.pdf"><p>Termeni și condiții</p></a>
+            <a href="retur.pdf"><p>Politica de returnare</p></a>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Contact</h1>
+        <p>Str. Baba Novac, Nr. 10, București, Sector 3</p>
+        <p>0749090545</p>
+        <p>homeawayconcept@gmail.com</p>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Urmărește-ne</h1>
+            <a href="https://www.facebook.com/TotiVotam/"><p><i class="fa fa-facebook-official"></i> Facebook</p></a>
+            <a href="https://www.instagram.com/?hl=ro"><p><i class="fa fa-instagram"></i> Instagram</p></a>
+            </div>
+        <div class="col-md-3 footer-image">
+            <img src="C:\Users\John\Desktop\licenta\photos\logo.png">
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Conținutul acestui site este protejat de drepturile de autor</p>
+        </div>
+        
+        </section>
+    
+             
+             
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+    
+
+</body>
+ 
+    
+</html>

@@ -1,0 +1,110 @@
+<html>   
+<head>
+<title>Noi Votam!Toti Votam! </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+</head>
+<body>
+<div class="top-nav-bar">
+<div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+<img src="C:\Users\John\Desktop\licenta\photos\logo.png" class="logo">
+<input type="text" class="form-control">
+<span class="input-group-text"><i class="fa fa-search"></i>
+</span>
+    </div>
+<div class="menu-bar">
+    <ul>
+    <li><a hreaf="#"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+    <li><a hreaf="#">Sign Up</a></li>
+    <li><a hreaf="#">Log In</a></li>
+    </ul>
+</div>
+</div>
+<section class="website-features">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\100%.jpg">
+    <div class="feature-text">
+    <p><b>100% Produse originale </b>cu rol educativ</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\livrare.png">
+    <div class="feature-text">
+    <p><b>Livrare gratuită </b>pentru comenzi de minimum 120 RON</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\plataonline.png">
+    <div class="feature-text">
+    <p><b>Plată online </b>prin card sau transfer bancar</p>
+    </div>
+    </div>
+    <div class="col-md-3 feature-box">
+    <img src="C:\Users\John\Desktop\licenta\photos\retur1.png">
+    <div class="feature-text">
+    <p><b>Retur gratuit </b>în 14 zile</p>
+    </div>
+    </div>
+    </section>
+        
+    <!---------------------Footer------------------->
+    <section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+        <div class="col-md-3">
+        <h1>Link-uri utile</h1>
+        <p>Politica de confidențialitate</p>
+        <p>Termeni și condiții</p>
+        <p>Politica de returnare</p>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Despre noi</h1>
+        <p>Informații despre companie</p>
+        <p>Contact</p>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Social Media</h1>
+        <p><i class="fa fa-facebook-official"></i> Facebook</p>
+        <p><i class="fa fa-instagram"></i> Instagram</p>
+            </div>
+        <div class="col-md-3 footer-image">
+            <img src="C:\Users\John\Desktop\licenta\photos\logo.png">
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Conținutul acestui site este protejat de drepturile de autor</p>
+        </div>
+        
+        </section>
+    
+             
+             
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+    
+
+</body>
+ 
+    
+</html>

@@ -1,0 +1,112 @@
+<html>   
+<head>
+<title>Noi Votam!Toti Votam! Educația </title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+</head>
+<body>
+<div class="top-nav-bar">
+<div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+    <a href="index.html"><img src="logo.png" class="logo"></a>
+<input type="text" class="form-control">
+<span class="input-group-text"><i class="fa fa-search"></i>
+</span>
+    </div>
+<div class="menu-bar">
+    <ul>
+	<li><a href="shop.html"><i class="fa fa-shopping-cart"></i>Coș</a></li>
+    <li><a href="cont.html">Contul meu</a></li>
+    </ul>
+</div>
+</div>
+    
+    
+    <form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Înregistrează-te</h1>
+    <p>Introdu datele de înregistrare:</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Introdu adresa de email" name="email" required>
+
+    <label for="psw"><b>Parolă</b></label>
+    <input type="password" placeholder="Minim 8 caractere, printre care litere minuscule, majuscule și cifre" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirmă parola</b></label>
+    <input type="password" placeholder="Reintrodu parola" name="psw-repeat" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Păstrează datele
+    </label>
+
+      <p>Prin crearea contului, sunt de acord cu <a href="politica.pdf" style="color:dodgerblue">politica de confidențialitate</a> și <a href="termeni.pdf" style="color:dodgerblue">termenii și condițiile de utilizare</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Anulare</button>
+      <button type="submit" class="signupbtn">Înregistrare</button>
+    </div>
+  </div>
+</form>
+    
+    
+<!---------------------Footer------------------->
+    <section class="footer">
+    <div class="container tex-center">
+        <div class="row">
+        <div class="col-md-3">
+        <h1>Link-uri utile</h1>
+            <a href="politica.pdf"><p>Politica de confidențialitate</p></a>
+            <a href="termeni.pdf"><p>Termeni și condiții</p></a>
+            <a href="retur.pdf"><p>Politica de returnare</p></a>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Contact</h1>
+        <p>Str. Baba Novac, Nr. 10, București, Sector 3</p>
+        <p>0749090545</p>
+        <p>homeawayconcept@gmail.com</p>
+            </div>
+            
+        <div class="col-md-3">
+        <h1>Urmărește-ne</h1>
+            <a href="https://www.facebook.com/TotiVotam/"><p><i class="fa fa-facebook-official"></i> Facebook</p></a>
+            <a href="https://www.instagram.com/?hl=ro"><p><i class="fa fa-instagram"></i> Instagram</p></a>
+            </div>
+        <div class="col-md-3 footer-image">
+            <img src="C:\Users\John\Desktop\licenta\photos\logo.png">
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Conținutul acestui site este protejat de drepturile de autor</p>
+        </div>
+        
+        </section>
+    
+             
+             
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+    
+
+    
+    
+    </body>
